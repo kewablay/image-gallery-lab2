@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google fonts end -->
+  </head>
+  <body
+    class="w-screen h-screen box-border m-0 h-0 trancking-[-0.8px] overflow-x-hidden "
+    style="font-family: 'Poppins', sans-serif"
+  >
+    <!-- Light box display -->
+    <section
+      class="hidden lightbox w-full h-full absolute top-0 left-0 bottom-0 z-10 bg-black/85 backdrop-blur-[4px] overflow-hidden flex justify-center items-center"
+    >
+      <!-- image preview -->
+      <div class="image-preview-container w-[80%] h-[80vh] overflow-hidden">
+        <img
+          src="/assets/images/camera.jpg"
+          class="rounded-xl object- hover:scale-105 transition-ease-in-out duration-100contain w-full h-full rounded"
+          alt="white-room"
+        />
+      </div>
+
+      <!-- navigation button s -->
+      <!-- previous button  -->
+      <button
+        class="previous-button absolute left-5 top-[50%] bg-white rounded-full flex justify-center items-center size-11"
+      >
+        <img src="/assets/icons/arrow.png" alt="left-arrow" />
+      </button>
+      <!-- next button  -->
+      <button
+        class="next-button absolute rotate-180 right-5 top-[50%] bg-white rounded-full flex justify-center items-center size-11"
+      >
+        <img src="/assets/icons/arrow.png" alt="left-arrow" />
+      </button>
+      <!-- navigation button s ends -->
+
+      <!-- close lightbox -->
+      <button class="close-button absolute right-5 top-5"><img src="/assets//icons/close-icon.png" alt="close"></button>
+      
+
+    </section>
+    <!-- Light box display -->
+
+    <header
+      class="w-full flex items-center justify-between max-w-[1024px] mx-auto py-5 border-b border-gray-300"
+    >
+      <!-- Logo section  -->
+      <img class="w-auto h-7" src="/assets/icons/logo.png" alt="iGallery" />
+
+      <!-- toggle grid button  -->
+      <button
+        class="flex gap-2 items-center font-bold px-5 py-2 rounded-full border border-black"
+      >
+        <img src="/assets/icons/grid-icon.png" alt="grid-icon" />
+        Toggle grid
+      </button>
+    </header>
+
+    <main class="max-w-[1024px] mx-auto mt-20 pb-20">
+      <!-- Hero section  -->
+      <div class="flex justify-between items-start">
+        <!-- hero text -->
+        <h1
+          class="text-[45px] max-w-[24rem] font-bold leading-[135.405%] tracking-[-2.08px]"
+        >
+          Discover <span class="text-[#E06126]">Beauty</span> in Every Pixel
+        </h1>
+
+        <!-- intro text -->
+        <p class="mt-4 w-[40%]">
+          Welcome to Amalitech iGallery – where every tap reveals a world of
+          wonder. Explore stunning visuals, share your favorites, and ignite
+          your inspiration. Let's dive in
+        </p>
+      </div>
+
+      <!-- Image grid  -->
+      <section
+        class="image-grid-container columns-4 space-y-5 grid-row-masonry gap-5 mt-28 border"
+      >
+        <!-- image -->
+        <img
+          src="/assets/images/white-room.jpg"
+          class="break-inside-avoid hover:scale-105 transition-ease-in-out duration-100 rounded-xl"
+          alt="white-room"
+        />
+        <!-- image -->
+        <img
+          src="/assets/images/chineese-house.jpg"
+          class="break-inside-avoid hover:scale-105 transition-ease-in-out duration-100 rounded-xl"
+          alt="white-room"
+        />
+        <!-- image -->
+        <img
+          src="/assets/images/glass-building.jpg "
+          class="break-inside-avoid hover:scale-105 transition-ease-in-out duration-100 rounded-xl"
+          alt="white-room"
+        />
+        <!-- image -->
+        <img
+          src="/assets/images/dom-hill.jpg"
+          class="break-inside-avoid hover:scale-105 transition-ease-in-out duration-100 rounded-xl"
+          alt="white-room"
+        />
+        <!-- image -->
+        <img
+          src="/assets/images/lady-with-jacket.jpg"
+          class="break-inside-avoid hover:scale-105 transition-ease-in-out duration-100 rounded-xl"
+          alt="white-room"
+        />
+        <img
+          src="/assets/images/ivana-cajina.jpg"
+          class="break-inside-avoid hover:scale-105 transition-ease-in-out duration-100 rounded-xl"
+          alt="white-room"
+        />
+        <img
+          src="/assets/images/corey-saldana.jpg"
+          class="break-inside-avoid hover:scale-105 transition-ease-in-out duration-100 rounded-xl"
+          alt="white-room"
+        />
+        <img
+          src="/assets/images/corey-saldana-club-shot.jpg"
+          class="break-inside-avoid hover:scale-105 transition-ease-in-out duration-100 rounded-xl"
+          alt="white-room"
+        />
+        <img
+          src="/assets/images/daniel-nyman.jpg"
+          class="break-inside-avoid hover:scale-105 transition-ease-in-out duration-100 rounded-xl"
+          alt="white-room"
+        />
+        <img
+          src="/assets/images/camera.jpg"
+          class="break-inside-avoid hover:scale-105 transition-ease-in-out duration-100 rounded-xl"
+          alt="white-room"
+        />
+        <img
+          src="/assets/images/jessica-felicio.jpg"
+          class="break-inside-avoid hover:scale-105 transition-ease-in-out duration-100 rounded-xl"
+          alt="white-room"
+        />
+        <img
+          src="/assets/images/caleb-lucas.jpg"
+          class="break-inside-avoid hover:scale-105 transition-ease-in-out duration-100 rounded-xl"
+          alt="white-room"
+        />
+        <img
+          src="/assets/images/ian-roseboro.jpg"
+          class="break-inside-avoid hover:scale-105 transition-ease-in-out duration-100 rounded-xl"
+          alt="white-room"
+        />
+        <img
+          src="/assets/images/divine-effiong.jpg"
+          class="break-inside-avoid hover:scale-105 transition-ease-in-out duration-100 rounded-xl"
+          alt="white-room"
+        />
+        <!-- <img
+          src="/assets/images/etty-fidele.jpg"
+          class="break-inside-avoid hover:scale-105 transition-ease-in-out duration-100 rounded-xl"
+          alt="white-room"
+        /> -->
+      </section>
+    </main>
+  </body>
+</html>
