@@ -109,6 +109,7 @@ const renderImageGrid = () => {
       (image) => `
       <img
         src="${image.thumbnail_url}"
+        loading="lazy"
         class="gallery-image cursor-pointer hover:scale-105 transition-ease-in-out duration-100 rounded-xl"
         alt="${image.caption}"
         onclick="showLightBox(${image.id})"
@@ -138,6 +139,7 @@ const updateLightbox = () => {
   imagePreviewer.innerHTML = `
     <img
       src="${images[activeImageIndex].image_url}"
+      loading="lazy"
       class="rounded-xl object-contain hover:scale-105 transition-ease-in-out duration-100 w-full h-full rounded"
       alt="gallery-image"
     />
