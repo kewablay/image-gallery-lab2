@@ -20,15 +20,24 @@
   >
     <!-- Light box display -->
     <section
-      class="hidden lightbox w-full h-full absolute top-0 left-0 bottom-0 z-10 bg-black/85 backdrop-blur-[4px] overflow-hidden flex justify-center items-center"
+      class="hidden lightbox w-full h-full fixed top-0 left-0 bottom-0 z-10 bg-black/85 backdrop-blur-[4px] overflow-hidden flex justify-center items-center"
     >
       <!-- image preview -->
-      <div class="image-preview-container w-[80%] h-[80vh] overflow-hidden">
+      <div class="relative image-preview-container w-[80%] h-[80vh] overflow-hidden">
         <img
           src="/assets/images/camera.jpg"
-          class="rounded-xl object- hover:scale-105 transition-ease-in-out duration-100contain w-full h-full rounded"
+          class="rounded-xl object-contain hover:scale-105 transition-ease-in-out duration-100 w-full h-full rounded"
           alt="white-room"
         />
+
+        <!-- caption  -->
+        <div class="absolute  bottom-0 bg-black/40 backdrop-blur-[4px] p-5 py-4 z-20 w-full flex justify-center items-center">
+          <p class="text-white lg:max-w-[70%] ">
+            This is an aesthetic design of a modern room based on ultramodern
+            architecture.This is an aesthetic design of a modern room based on ultramodern
+            architecture.
+          </p>
+        </div>
       </div>
 
       <!-- navigation button s -->
